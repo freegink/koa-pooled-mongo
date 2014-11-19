@@ -11,6 +11,10 @@ Helper methods:
 
 ### Installation
 
+```
+$ npm install koa-pooled-mongo
+```
+
 ### Usage
 
 ```
@@ -34,6 +38,8 @@ All options of [generic-pool](https://github.com/coopernurse/node-pool) can be p
 ### Examples
 
 ```
+var koa = require('koa');
+var mongo = require('koa-pooled-mongo');
 var app = koa();
 app.use(mongo());
 app.use(function* (next) {
