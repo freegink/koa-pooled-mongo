@@ -1,0 +1,39 @@
+{
+  "name": "koa-pooled-mongo",
+  "version": "0.0.1",
+  "description": "Koa-pooled-mongo is a mongodb middleware for koa with support of connection pooling. The idea is inspired by Koa-mongo. But this one uses co-mongo instead of native mongodb lib to support generator-based flow control.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --harmony-generators --require should test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freegink/koa-pooled-mongo.git"
+  },
+  "keywords": [
+    "koa",
+    "mongodb",
+    "co-mongo",
+    "generic-pool"
+  ],
+  "dependencies": {
+    "debug": "~1.0.4",
+    "generic-pool": "~2.1.1",
+    "co-mongo": "~0.0.2"
+  },
+  "devDependencies": {
+    "koa": "~0.8.2",
+    "mocha": "~1.17.1",
+    "should": "~3.1.2",
+    "supertest": "~0.15.0"
+  },
+  "author": "freegink",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freegink/koa-pooled-mongo/issues"
+  },
+  "homepage": "https://github.com/freegink/koa-pooled-mongo"
+}
